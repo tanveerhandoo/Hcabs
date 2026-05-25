@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Handoo Elite | Luxury Kashmir Cab Booking</title>
+
+<meta name="description" content="Luxury Kashmir cab booking website with premium rides, SUV, Sedan and luxury taxi services in Srinagar Kashmir.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="loader" id="loader">
+<div class="spinner"></div>
+</div>
+
+<nav class="navbar">
+<div class="logo">HANDOO ELITE</div>
+
+<div class="menu-btn" id="menuBtn">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+<ul class="nav-links" id="navLinks">
+<li><a href="#home">Home</a></li>
+<li><a href="#booking">Booking</a></li>
+<li><a href="#fleet">Fleet</a></li>
+<li><a href="#destinations">Destinations</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero" id="home">
+<div class="overlay"></div>
+
+<div class="hero-content">
+<span class="badge">Luxury Kashmir Taxi Service</span>
+
+<h1>
+Explore Kashmir In
+<span>Luxury Style</span>
+</h1>
+
+<p>
+Premium cab booking service with luxury cars, professional drivers and instant WhatsApp support.
+</p>
+
+<div class="hero-buttons">
+<a href="#booking" class="primary-btn">Book Now</a>
+
+<a href="https://wa.me/917006462571" target="_blank" class="secondary-btn">
+WhatsApp
+</a>
+</div>
+</div>
+</section>
+
+<section class="booking-section" id="booking">
+
+<div class="section-title">
+<span>Premium Booking</span>
+<h2>Book Your Luxury Ride</h2>
+</div>
+
+<div class="booking-container glass">
+
+<form id="bookingForm">
+
+<div class="input-group">
+<label>Full Name</label>
+<input type="text" id="name" required>
+</div>
+
+<div class="input-group">
+<label>Phone Number</label>
+<input type="tel" id="phone" required>
+</div>
+
+<div class="input-group">
+<label>Pickup Location</label>
+<input type="text" id="pickup" required>
+</div>
+
+<div class="input-group">
+<label>Drop Location</label>
+<input type="text" id="destination" required>
+</div>
+
+<div class="input-group">
+<label>Pickup Date</label>
+<input type="date" id="pickupDate" required>
+</div>
+
+<div class="input-group">
+<label>Pickup Time</label>
+<input type="time" id="pickupTime" required>
+</div>
+
+<div class="full-width">
+<h3 class="fleet-heading">Select Car Type</h3>
+
+<div class="car-grid">
+
+<div class="car-card active" data-price="4500">
+<img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1200&auto=format&fit=crop">
+<div class="car-info">
+<h4>SUV</h4>
+<p>Comfortable family ride</p>
+</div>
+</div>
+
+<div class="car-card" data-price="3200">
+<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1200&auto=format&fit=crop">
+<div class="car-info">
+<h4>Sedan</h4>
+<p>Elegant premium comfort</p>
+</div>
+</div>
+
+<div class="car-card" data-price="8500">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop">
+<div class="car-info">
+<h4>Luxury</h4>
+<p>VIP luxury experience</p>
+</div>
+</div>
+
+<div class="car-card" data-price="2500">
+<img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?q=80&w=1200&auto=format&fit=crop">
+<div class="car-info">
+<h4>Hatchback</h4>
+<p>Affordable daily ride</p>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="full-width">
+<label>Driver Notes</label>
+<textarea id="messageBox" placeholder="Special instructions for driver"></textarea>
+</div>
+
+<div class="fare-box full-width">
+<h3>Estimated Fare</h3>
+<div class="fare">
+₹ <span id="fareAmount">4500</span>
+</div>
+</div>
+
+<button type="submit" class="submit-btn full-width">
+<i class="fa-brands fa-whatsapp"></i>
+Book On WhatsApp
+</button>
+
+</form>
+
+</div>
+</section>
+
+<section class="fleet-section" id="fleet">
+
+<div class="section-title">
+<span>Luxury Fleet</span>
+<h2>Popular Cars</h2>
+</div>
+
+<div class="fleet-grid">
+
+<div class="fleet-card">
+<img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1200&auto=format&fit=crop">
+<h3>Scorpio</h3>
+</div>
+
+<div class="fleet-card">
+<img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=1200&auto=format&fit=crop">
+<h3>BMW Luxury</h3>
+</div>
+
+<div class="fleet-card">
+<img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?q=80&w=1200&auto=format&fit=crop">
+<h3>Innova Crysta</h3>
+</div>
+
+</div>
+
+</section>
+
+<section class="destination-section" id="destinations">
+
+<div class="section-title">
+<span>Explore Kashmir</span>
+<h2>Popular Destinations</h2>
+</div>
+
+<div class="destination-grid">
+
+<div class="destination-card">
+<img src="https://images.unsplash.com/photo-1595815771614-ade9d652a65d?q=80&w=1200&auto=format&fit=crop">
+<div class="destination-content">
+<h3>Gulmarg</h3>
+<p>Snow paradise and mountain rides</p>
+</div>
+</div>
+
+<div class="destination-card">
+<img src="https://images.unsplash.com/photo-1627894483216-2138af692e32?q=80&w=1200&auto=format&fit=crop">
+<div class="destination-content">
+<h3>Pahalgam</h3>
+<p>Beautiful valleys and rivers</p>
+</div>
+</div>
+
+<div class="destination-card">
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=1200&auto=format&fit=crop">
+<div class="destination-content">
+<h3>Sonamarg</h3>
+<p>Golden meadows and glaciers</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="reviews-section" id="reviews">
+
+<div class="section-title">
+<span>Customer Reviews</span>
+<h2>What Clients Say</h2>
+</div>
+
+<div class="review-grid">
+
+<div class="review-card glass">
+<div class="stars">★★★★★</div>
+<p>Excellent service and professional drivers during our Kashmir trip.</p>
+<h4>Rahul Sharma</h4>
+</div>
+
+<div class="review-card glass">
+<div class="stars">★★★★★</div>
+<p>Luxury experience with instant WhatsApp booking support.</p>
+<h4>Sarah Khan</h4>
+</div>
+
+<div class="review-card glass">
+<div class="stars">★★★★★</div>
+<p>Clean cars, smooth rides and responsive support team.</p>
+<h4>Aditya Mehra</h4>
+</div>
+
+</div>
+</section>
+
+<section class="contact-section" id="contact">
+
+<div class="section-title">
+<span>Contact</span>
+<h2>Reach Us Anytime</h2>
+</div>
+
+<div class="contact-box glass">
+<p><i class="fa-solid fa-phone"></i> +91 7006462571</p>
+<p><i class="fa-solid fa-location-dot"></i> Srinagar, Kashmir</p>
+<p><i class="fa-solid fa-star"></i> Rated 4.9/5</p>
+</div>
+
+</section>
+
+<a href="https://wa.me/917006462571" class="floating-whatsapp" target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<div class="mobile-book-btn">
+<a href="#booking">Book Ride</a>
+</div>
+
+<footer>
+© 2026 Handoo Elite Luxury Cabs
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
